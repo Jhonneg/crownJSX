@@ -1,3 +1,7 @@
 # Crown Clothing
 
-E-commerce shop build with React, Sass, React Router, Firebase
+
+E-commerce shop build with 
+
+[![Current tech stack](https://skillicons.dev/icons?i=react,sass,firebase)](https://skillicons.dev)
+
