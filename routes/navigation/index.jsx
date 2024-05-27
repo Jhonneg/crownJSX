@@ -5,7 +5,7 @@ export default function Navigation() {
   return (
     <>
       <div className="navigation">
-        <Link className="logo-container" to="/crownJSX">
+        <Link className="logo-container" to="/">
           <img src={logo} alt="logo" />
         </Link>
         <div className="nav-links-container">
