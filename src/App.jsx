@@ -1,16 +1,6 @@
 import Home from "../routes/home";
-import { Routes, Route, Outlet } from "react-router-dom";
-
-function Navigation() {
-  return (
-    <div>
-      <div>
-        <h1>I am the navigation component</h1>
-      </div>
-      <Outlet />
-    </div>
-  );
-}
+import Navigation from "../routes/navigation";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
