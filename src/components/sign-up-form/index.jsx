@@ -16,10 +16,14 @@ export default function SignUpForm() {
 
   console.log(formFields);
 
+  const resetFormFields = () => {
+    setFormFields(defaultFormFields);
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if ((password != confirmPassword)) {
-      alert("password don't match");
+    if (password != confirmPassword) {
+      alert("Passwords don't match");
       return;
     }
     try {
@@ -28,8 +32,13 @@ export default function SignUpForm() {
         password
       );
       await createUserDocumentFromAuth(user, { displayName });
+      resetFormFields();
     } catch (error) {
-      console.log("user creation encoutered an error", error);
+      if (error.code === "auth/email-already-in-use") {
+        alert("Cannot create use, email already in use");
+      } else {
+        console.log("user creation encoutered an error", error);
+      }
     }
   };
 
