@@ -1,3 +1,3 @@
 # Crown Clothing
 
-E-commerce shop build with React, React Router, Sass
+E-commerce shop build with React, Sass, React Router, Firebase
