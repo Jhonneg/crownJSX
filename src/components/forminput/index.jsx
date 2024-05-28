@@ -1,8 +1,17 @@
+import "./styles.scss";
 export default function FormInput({ label, ...otherProps }) {
   return (
-    <>
-      <label>{label}</label>
-      <input {...otherProps} />
-    </>
+    <div className="group">
+      <input className="form-input" {...otherProps} />
+      {label && (
+        <label
+          className={`${
+            otherProps.value.length ? "shrink " : "null"
+          } form-input-label`}
+        >
+          {label}
+        </label>
+      )}
+    </div>
   );
 }
