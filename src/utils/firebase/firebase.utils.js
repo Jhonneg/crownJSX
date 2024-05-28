@@ -42,17 +42,18 @@ export async function createUserDocumentFromAuth(
   additionalInformation = {}
 ) {
   if (!userAuth) return;
-
+  //initialize variables, user doc creates document format on firestore db
   const userDocRef = doc(db, "users", userAuth.uid);
   console.log(userDocRef);
 
   const userSnapshot = await getDoc(userDocRef);
   console.log(userSnapshot);
-  //Create user snapshot
+  //check if user exist
   if (!userSnapshot.exists()) {
     const { displayName, email } = userAuth;
     const createAt = new Date();
     try {
+      //setdoc creates user info
       await setDoc(userDocRef, {
         displayName,
         email,
