@@ -91,7 +91,7 @@ export default function SignUpForm() {
           value={confirmPassword}
         />
         <Button type="submit">
-          Sign Up{" "}
+          Sign Up
         </Button>
       </form>
     </div>
