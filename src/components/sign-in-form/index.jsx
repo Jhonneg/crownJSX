@@ -2,6 +2,7 @@ import { useState } from "react";
 import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
+  signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "../forminput";
 import Button from "../button";
@@ -27,10 +28,19 @@ export default function SignInForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     try {
+      const response = await signInAuthUserWithEmailAndPassword(
+        email,
+        password
+      );
+      console.log(response);
       resetFormFields();
-    } catch (error) {}
+    } catch (error) {
+      if (error.code === "auth/invalid-credential") {
+        alert("Incorrect credentials");
+      }
+      console.log(error);
+    }
   };
 
   const handleChange = (event) => {
@@ -61,8 +71,8 @@ export default function SignInForm() {
         />
         <div className="buttons-container">
           <Button type="submit">Sign In </Button>
-          <Button buttonType="google" onClick={signInWithGoogle}>
-            Sign In with Google
+          <Button type="button" buttonType="google" onClick={signInWithGoogle}>
+            Google Sign in
           </Button>
         </div>
       </form>

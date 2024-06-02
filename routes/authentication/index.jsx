@@ -1,15 +1,9 @@
-import {
-  signInWithGooglePopup,
-  createUserDocumentFromAuth,
-} from "../../src/utils/firebase/firebase.utils";
 import SignUpForm from "../../src/components/sign-up-form";
 import SignInForm from "../../src/components/sign-in-form";
-
+import "./styles.scss";
 export default function Authentication() {
-
   return (
-    <div>
-      <h1>Sign in page</h1>
+    <div className="authentication-container">
       <SignInForm />
       <SignUpForm />
     </div>
