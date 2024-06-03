@@ -4,11 +4,11 @@ import "./navigation.styles.scss";
 import logo from "../../src/assets/crown.svg";
 import { UserContext } from "../../src/contexts/user.context";
 import { signOutUser } from "../../src/utils/firebase/firebase.utils";
+import CartIcon from "../../src/components/cart-icon";
 
 export default function Navigation() {
-  
   const { currentUser } = useContext(UserContext);
- 
+
   return (
     <>
       <div className="navigation">
@@ -28,6 +28,7 @@ export default function Navigation() {
               SIGN IN
             </Link>
           )}
+          <CartIcon />
         </div>
       </div>
       <Outlet />
