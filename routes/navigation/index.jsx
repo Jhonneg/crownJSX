@@ -3,13 +3,14 @@ import { useContext } from "react";
 import "./navigation.styles.scss";
 import logo from "../../src/assets/crown.svg";
 import { UserContext } from "../../src/contexts/user.context";
+import { CartContext } from "../../src/contexts/cart.context";
 import { signOutUser } from "../../src/utils/firebase/firebase.utils";
 import CartIcon from "../../src/components/cart-icon";
 import CardDropdown from "../../src/components/cart-dropdown";
 
 export default function Navigation() {
   const { currentUser } = useContext(UserContext);
-
+  const { isCartOpen } = useContext(CartContext);
   return (
     <>
       <div className="navigation">
@@ -31,7 +32,7 @@ export default function Navigation() {
           )}
           <CartIcon />
         </div>
-        <CardDropdown />
+        {isCartOpen && <CardDropdown />}
       </div>
       <Outlet />
     </>
