@@ -1,11 +1,8 @@
+import { Routes, Route } from "react-router-dom";
 import Home from "../routes/home";
 import Navigation from "../routes/navigation";
-import { Routes, Route } from "react-router-dom";
 import Authentication from "../routes/authentication";
-
-function Shop() {
-  return <div>Shop goes here</div>;
-}
+import Shop from "../routes/shop";
 
 export default function App() {
   return (
