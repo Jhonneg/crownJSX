@@ -5,6 +5,7 @@ import logo from "../../src/assets/crown.svg";
 import { UserContext } from "../../src/contexts/user.context";
 import { signOutUser } from "../../src/utils/firebase/firebase.utils";
 import CartIcon from "../../src/components/cart-icon";
+import CardDropdown from "../../src/components/cart-dropdown";
 
 export default function Navigation() {
   const { currentUser } = useContext(UserContext);
@@ -30,6 +31,7 @@ export default function Navigation() {
           )}
           <CartIcon />
         </div>
+        <CardDropdown />
       </div>
       <Outlet />
     </>
