@@ -21,8 +21,7 @@ export default function SignInForm() {
     setFormFields(defaultFormFields);
   };
   async function signInWithGoogle() {
-    const { user } = await signInWithGooglePopup();
-    createUserDocumentFromAuth(user);
+     await signInWithGooglePopup();
   }
 
   const handleSubmit = async (event) => {

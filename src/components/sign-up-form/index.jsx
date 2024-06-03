@@ -3,7 +3,6 @@ import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
-
 import FormInput from "../forminput";
 import Button from "../button";
 import "./styles.scss";
