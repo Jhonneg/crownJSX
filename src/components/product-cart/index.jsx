@@ -7,7 +7,7 @@ export default function ProductCard({ product }) {
   const { name, price, imageUrl } = product;
   const { addItemToCart } = useContext(CartContext);
   const addProductToCart = () => addItemToCart(product);
-
+ const increaseProductCount = () => product
   return (
     <div className="product-card-container">
       <img src={imageUrl} alt={`${name}`} />
