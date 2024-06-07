@@ -3,6 +3,7 @@ import Home from "../routes/home";
 import Navigation from "../routes/navigation";
 import Authentication from "../routes/authentication";
 import Shop from "../routes/shop";
+import Checkout from "../routes/checkout";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
         <Route path="auth" element={<Authentication />} />
+        <Route path="checkout" element={<Checkout />} />
       </Route>
     </Routes>
   );
