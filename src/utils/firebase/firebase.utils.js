@@ -47,6 +47,7 @@ export const signInWithGoogleRedirect = () =>
 
 export const db = getFirestore();
 
+//adding shop data js files to firestore
 export const addColletionAndDocuments = async (collectionKey, objectsToAdd) => {
   const collectionRef = collection(db, collectionKey);
   const batch = writeBatch(db);
@@ -56,7 +57,7 @@ export const addColletionAndDocuments = async (collectionKey, objectsToAdd) => {
   });
   await batch.commit();
 
-  console.log("done");
+  console.log("Database written");
 };
 
 export async function createUserDocumentFromAuth(
