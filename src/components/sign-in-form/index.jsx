@@ -5,7 +5,7 @@ import {
   signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "../forminput";
-import Button from "../button";
+import Button, { BUTTON_TYPES_CLASS } from "../button";
 import "./styles.scss";
 
 const defaultFormFields = {
@@ -16,12 +16,11 @@ export default function SignInForm() {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
 
-
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
   };
   async function signInWithGoogle() {
-     await signInWithGooglePopup();
+    await signInWithGooglePopup();
   }
 
   const handleSubmit = async (event) => {
@@ -68,7 +67,11 @@ export default function SignInForm() {
         />
         <div className="buttons-container">
           <Button type="submit">Sign In </Button>
-          <Button type="button" buttonType="google" onClick={signInWithGoogle}>
+          <Button
+            type="button"
+            buttonType={BUTTON_TYPES_CLASS.google}
+            onClick={signInWithGoogle}
+          >
             Google Sign in
           </Button>
         </div>
