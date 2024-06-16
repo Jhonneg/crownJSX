@@ -1,5 +1,14 @@
 # Crown Clothing
 
-E-commerce shop build with
+**For scafolding, bundling, hot reload.** 
 
-[![Current tech stack](https://skillicons.dev/icons?i=react,vite,styledcomponents,firebase,styled)](https://skillicons.dev)
+![](https://skillicons.dev/icons?i=bun,vite) 
+
+**UI library and styling.**
+
+![](https://skillicons.dev/icons?i=react,styledcomponents)
+
+**Backend and authentication.** 
+
+![](https://skillicons.dev/icons?i=firebase)
+
