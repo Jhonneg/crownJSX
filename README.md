@@ -8,7 +8,7 @@
 
 ![](https://skillicons.dev/icons?i=react,styledcomponents)
 
-**Backend and authentication.** 
+**Backend, authentication and database.** 
 
 ![](https://skillicons.dev/icons?i=firebase)
 
