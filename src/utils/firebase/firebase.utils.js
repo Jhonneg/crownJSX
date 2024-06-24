@@ -75,10 +75,8 @@ export async function createUserDocumentFromAuth(
   if (!userAuth) return;
   //initialize variables, user doc creates document format on firestore db
   const userDocRef = doc(db, "users", userAuth.uid);
-  console.log(userDocRef);
 
   const userSnapshot = await getDoc(userDocRef);
-  console.log(userSnapshot);
   //check if user exist
   if (!userSnapshot.exists()) {
     const { displayName, email } = userAuth;
