@@ -4,9 +4,9 @@
 
 ![](https://skillicons.dev/icons?i=bun,vite) 
 
-**UI library and styling.**
+**UI library, styling and state management.**
 
-![](https://skillicons.dev/icons?i=react,styledcomponents)
+![](https://skillicons.dev/icons?i=react,styledcomponents,redux)
 
 **Backend, authentication and database.** 
 
