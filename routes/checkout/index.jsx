@@ -10,6 +10,7 @@ import {
   HeaderBlock,
   Total,
 } from "./styles.jsx";
+import PaymentForm from "../../src/components/payment-form/index.jsx";
 
 export default function Checkout() {
   const cartItems = useSelector(selectCartItems);
@@ -37,6 +38,7 @@ export default function Checkout() {
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))}
       <Total>Total:${cartTotal} </Total>
+      <PaymentForm />
     </CheckoutContainer>
   );
 }
