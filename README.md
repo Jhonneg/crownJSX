@@ -1,17 +1,8 @@
 # Crown Clothing
 
-**For scafolding, bundling, hot reload.** 
+This project is a clothing e-commerce shop, it allows you to browse, add items to cart, browse specific sections, authenticate with google or sign up with a regular account, in the end, you can checkout with **Stripe** payment form.
 
-![](https://skillicons.dev/icons?i=bun,vite) 
+This app was built with **React** as a UI library, **Styled Components** for styling, **Redux/Sagas** for global state management, **React-router-dom** for routing, and with **Firebase** as a database and authentification on the backend.
 
-**UI library, styling and state management.**
+![](https://skillicons.dev/icons?i=bun,vite,react,redux,styledcomponents,firebase) 
 
-![](https://skillicons.dev/icons?i=react,styledcomponents,redux)
-
-**Backend** 
-
-![](https://skillicons.dev/icons?i=firebase)
-
-**Routing.**
-
-<img width="100" height="60" src="https://github.com/Jhonneg/crownJSX/assets/94491571/60d69be8-578b-47dc-82b2-49a7dfbd3890"/>
