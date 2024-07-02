@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import ProductCard from "../../src/components/product-card";
-import Spinner from "../../src/components/spinner/index.jsx";
+import Spinner from "../../src/components/spinner/index";
 import { CategoryContainer, Title } from "./styles.jsx";
 import {
   selectCategoriesMap,
   selectIsCategoriesLoading,
-} from "../../src/store/categories/category.selector.js";
+} from "../../src/store/categories/category.selector";
 
 export default function Category() {
   const { category } = useParams();
