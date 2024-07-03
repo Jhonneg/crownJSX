@@ -6,7 +6,7 @@ import Navigation from "../routes/navigation";
 import Authentication from "../routes/authentication";
 import Shop from "../routes/shop";
 import Checkout from "../routes/checkout";
-import { checkUserSession } from "./store/user/user.action.js";
+import { checkUserSession } from "./store/user/user.action";
 
 export default function App() {
   const dispatch = useDispatch();
