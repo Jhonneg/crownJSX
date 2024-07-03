@@ -7,7 +7,7 @@ import {
 import FormInput from "../forminput";
 import Button from "../button";
 import { SignUpContainer } from "./styles.jsx";
-import { signUpStart } from "../../store/user/user.action.js";
+import { signUpStart } from "../../store/user/user.action";
 
 
 

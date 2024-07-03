@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { CartDropdownContainer, EmptyMessage, CartItems } from "./styles.jsx";
 import Button from "../button";
 import CartItem from "../cart-item";
-import { selectCartItems } from "../../store/cart/cart.selector.js";
+import { selectCartItems } from "../../store/cart/cart.selector";
 
 export default function CardDropdown() {
   const cartItems = useSelector(selectCartItems);

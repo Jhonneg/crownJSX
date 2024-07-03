@@ -1,6 +1,5 @@
-import { CATEGORIES_ACTION_TYPES, Category } from "./category.types";
+import { Category } from "./category.types";
 import {
-  CategoryAction,
   fetchCategoriesStart,
   fetchCategoriesSuccess,
   fetchCategoriesFailed,
@@ -20,7 +19,7 @@ export const CATEGORIES_INITIAL_STATE: CategoriesState = {
 };
 export const categoriesReducer = (
   state = CATEGORIES_INITIAL_STATE,
-  action = {} as AnyAction
+  action: AnyAction
 ): CategoriesState => {
   if (fetchCategoriesStart.match(action)) {
     return { ...state, isLoading: true };
