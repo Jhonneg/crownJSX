@@ -9,8 +9,8 @@ import {
   CheckoutHeader,
   HeaderBlock,
   Total,
-} from "./styles.jsx";
-import PaymentForm from "../../src/components/payment-form/index.jsx";
+} from "./styles";
+import PaymentForm from "../../src/components/payment-form/index";
 
 export default function Checkout() {
   const cartItems = useSelector(selectCartItems);

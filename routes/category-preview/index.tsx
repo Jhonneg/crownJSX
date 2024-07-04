@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import Spinner from "../../src/components/spinner";
 import {
   selectCategories,
@@ -11,7 +10,7 @@ const CategoryPreview = () => {
   const isLoading = useSelector(selectCategoriesIsLoading);
 
   return (
-    <Fragment>
+    <>
       {isLoading ? (
         <Spinner />
       ) : (
@@ -22,7 +21,7 @@ const CategoryPreview = () => {
           );
         })
       )}
-    </Fragment>
+    </>
   );
 };
 

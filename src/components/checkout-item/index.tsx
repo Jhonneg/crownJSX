@@ -14,11 +14,17 @@ import {
   clearItemFromCart,
   removeItemFromCart,
 } from "../../store/cart/cart.action";
+import { CartItem } from "../../store/cart/cart.types";
+import { FC } from "react";
 
-export default function CheckoutItem({ cartItem }) {
+type CheckoutItemProps = {
+  cartItem: CartItem;
+};
+
+const CheckoutItem: FC<CheckoutItemProps> = ({ cartItem }) => {
   const { name, imageUrl, price, quantity } = cartItem;
-  const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
+  const dispatch = useDispatch();
 
   const clearItemHander = () =>
     dispatch(clearItemFromCart(cartItems, cartItem));
@@ -40,4 +46,5 @@ export default function CheckoutItem({ cartItem }) {
       <RemoveButton onClick={clearItemHander}>X</RemoveButton>
     </CheckoutItemContainer>
   );
-}
+};
+export default CheckoutItem;

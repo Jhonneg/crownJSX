@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { CartDropdownContainer, EmptyMessage, CartItems } from "./styles.jsx";
-import Button from "../button";
-import CartItem from "../cart-item";
+import { CartDropdownContainer, EmptyMessage, CartItems } from "./styles";
+import Button from "../button/index";
+import CartItem from "../cart-item/index";
 import { selectCartItems } from "../../store/cart/cart.selector";
 
 export default function CardDropdown() {

@@ -7,11 +7,11 @@ import {
   LogoContainer,
 } from "./styles.jsx";
 import logo from "../../src/assets/crown.svg";
-import { selectIsCartOpen } from "../../src/store/cart/cart.selector";
-import { selectCurrentUser } from "../../src/store/user/user.selector";
-import { signOutStart } from "../../src/store/user/user.action";
-import CartIcon from "../../src/components/cart-icon";
-import CardDropdown from "../../src/components/cart-dropdown";
+import { selectIsCartOpen } from "../../src/store/cart/cart.selector.js";
+import { selectCurrentUser } from "../../src/store/user/user.selector.js";
+import { signOutStart } from "../../src/store/user/user.action.js";
+import CartIcon from "../../src/components/cart-icon/index.js";
+import CardDropdown from "../../src/components/cart-dropdown/index.jsx";
 
 export default function Navigation() {
   const dispatch = useDispatch();

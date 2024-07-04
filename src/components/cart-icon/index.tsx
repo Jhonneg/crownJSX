@@ -1,10 +1,10 @@
-import { ShoppingIcon, ItemCount, CartIconContainer } from "./styles.jsx";
+import { ShoppingIcon, ItemCount, CartIconContainer } from "./styles";
 import shoppingicon from "../../assets/shopping-bag.svg";
 import { useDispatch, useSelector } from "react-redux";
 import {
   selectCartCount,
   selectIsCartOpen,
-} from "../../store/cart/cart.selector";
+} from "../../store/cart/cart.selector.js";
 import { setIsCartOpen } from "../../store/cart/cart.action";
 
 export default function CartIcon() {
