@@ -1,5 +1,6 @@
 # Crown Clothing
 
+
 This project is a clothing e-commerce shop, it allows you to browse, add items to cart, browse specific sections, authenticate with google or sign up with a regular account, in the end, you can checkout with **Stripe** payment form using **Netlify serverless functions**.
 
 
